@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tasci Media</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+  <link rel="icon" href="favicon.ico.png">
+</head>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="images/coding-image.png" style="width:100%">
+  <div class="text">Web Developing</div>
+</div><!--"mySlides fade" end-->
+<div class="mySlides fade">
+  <img src="images/marketing.png" style="width:100%">
+  <div class="text">Marketing</div>
+</div><!--"mySlides fade" end-->
+<div class="mySlides fade">
+  <img src="images/uxuidesign.png" style="width:100%">
+</div><!--"mySlides fade" end-->
+<div class="mySlides fade">
+  <img src="images/graphicdesign.png" style="width:100%">
+  <div class="text">Graphic Desing</div>
+</div><!--"mySlides fade" end-->
+<div class="mySlides fade">
+  <img src="images/seo.png" style="width:100%">
+  <div class="text">S.E.O</div>
+</div><!--"mySlides fade" end-->
+<div class="mySlides fade">
+  <img src="images/copywriting.png" style="width:100%">
+  <div class="text">Copywriting</div>
+</div><!--"mySlides fade" end-->
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div><!--"slideshow-container" end-->
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+
+</div><!--"div" end-->
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+<div class="About-Me">
+
+<div class="profile">
+
+<img class = "profile-pic" src="images/johntasci.jpg" alt="johntasci">
+
+<p><em style = "text-align: center">Founder and CEO</em></p>
+
+<p>Started an online business agency known as <strong>TasciMedia</strong> at the age of 15. His business has 7
+employees and counting.</p>
+
+<p> Clients fast approaching to his services,but diffuculty of transportation and time taken from school makes it
+hard for him to expand.</p>
+
+<p> But, he said,<em>"You could try to talk me out with your BS, but I'm not changing.This is my life, and my journey.
+Anything you say would be flown in and out of my ears. School isn't for me, my clients haven't asked for my GPA,
+neither have I asked my employees. So, please if you wantto doubt me go ahead. I just don't care about what you say."
+</em></p>
+
+<p> Continuing on his journey to make TasciMedia his huge business in the future.</p>
+</div><!--"profile" end div-->
+</div><!--"About-Me" end div-->
+<h2>Our Services Include</h2>
+<h3><a class = "links" href = "webdeveloping.html" >Web Developing</a></h3>
+<h3><a class = "links" href = "marketing.html">Marketing</a></h3>
+<h3><a class = "links" href = "uxuidesign.html">UX/UI Design</a></h3>
+<h3><a class = "links" href = "graphicdesign.html">Graphic Design</a></h3>
+<h3><a class = "links" href = "seo.html">S.E.O</a></h3>
+<h3><a class = "links" href = "copywriting.html">Copywriting</a></h3>
+<!--Contact Form-->
+<div class="contact-me">
+
+<h2><strong>Get In Touch</strong></h2>
+
+<h3>If you would like us to grow your business.</h3>
+
+<p>Want to scale your business?<p>
+
+<p> Contact us and let's chat and know more about each other and
+how we can help your business grow!</p>
+<!--sends me an email-->
+<a class="btn" href="mailto:tascimedia@zohomail.com">CONTACT US</a>
+
+</div><!--"contact-me" end div-->
+
+
+  <div class="footer">
+    <a class="footer-link" href="https://www.facebook.com/tascimedia/">Facebook</a>
+    <a class="footer-link" href="https://www.instagram.com/tascimedia/">Instagram</a>
+    <a class="footer-link" href="mailto:tascimedia@zohomail.com">Contact Us</a>
+    <p class="copyright">© 2020 John Tasci   @TasciMedia</p>
+  </div><!--"footer" div end-->
+    <div class="navbar">
+      <a href= "index.html">Home</a>
+      <a href="webdeveloping.html">Web Developing</a>
+      <a href="marketing.html">Marketing</a>
+      <a href = "uxuidesign.html">UX/UI Design</a>
+      <a href = "graphicdesign.html">Graphic Design</a>
+      <a href = "seo.html">S.E.O</a>
+      <a href = "copywriting.html">Copywriting</a>
+      <a href = "aboutus.html">About Us</a>
+    </div><!--"navbar" div end-->
+
+</body>
+
+</html>
